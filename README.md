@@ -83,7 +83,8 @@ Use your IDE or the command line:
 | ------ | -------------------- | ----------------------- |
 | GET    | `/api/students`      | List all students       |
 | GET    | `/api/students/{id}` | Get student by ID       |
-| POST   |`/api/v1/auth/register`| Create new student      |
+| POST   |`/api/v1/auth/register`| Create new student     |
+| POST   |`/api/v1/auth/login`  | Create new student      |
 | PUT    | `/api/students/{id}` | Update existing student |
 | DELETE | `/api/students/{id}` | Delete student by ID    |
 
