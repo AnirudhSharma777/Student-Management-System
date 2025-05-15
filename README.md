@@ -32,7 +32,7 @@ A full-featured Student Management System built using **Spring Boot**, **MySQL (
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/student-management-system.git
+git clone https://github.com/AnirudhSharma777/Student-Management-System.git
 cd student-management-system
 ````
 
