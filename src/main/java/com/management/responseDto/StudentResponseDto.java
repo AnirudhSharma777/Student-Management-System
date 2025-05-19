@@ -4,7 +4,6 @@ import java.time.LocalDateTime;
 
 import com.management.Entities.Address;
 
-import lombok.Builder;
 
 public record StudentResponseDto(
     String id,
@@ -19,6 +18,5 @@ public record StudentResponseDto(
 
 ) {
 
-    @Builder
-    public StudentResponseDto{}
+    
 }
