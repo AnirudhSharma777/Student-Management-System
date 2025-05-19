@@ -69,10 +69,10 @@ public class AuthServiceImpl implements AuthService {
             var jwtToken = jwtService.generateToken(student);
             var expired = jwtService.getExpirationTime();
 
-            return LoginResponseDto.builder()
-                    .token(jwtToken)
-                    .expiresIn(expired)
-                    .build();
+            return new LoginResponseDto(
+                    jwtToken,
+                    expired);
+                    
         } catch (Exception e) {
 
             throw new StudentNotFoundException("Student not found");
