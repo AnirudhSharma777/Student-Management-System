@@ -52,17 +52,18 @@ public class StudentMapper {
                     .build();
         }
 
-        return StudentResponseDto.builder()
-                .id(student.getId())
-                .firstname(student.getFirstname())
-                .lastname(student.getLastname())
-                .email(student.getEmail())
-                .password(student.getPassword())
-                .age(student.getAge())
-                .address(address)
-                .createdAt(student.getCreatedAt())
-                .updatedAt(student.getUpdatedAt())
-                .build();
+        return new StudentResponseDto(
+            student.getId(),
+            student.getFirstname(),
+            student.getLastname(),
+            student.getEmail(),
+            student.getPassword(),
+            student.getAge(),
+            address,
+            student.getCreatedAt(),
+            student.getUpdatedAt()
+        );
+                
     }
 
 }
